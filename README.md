@@ -78,4 +78,4 @@ Signing Certificate for Server.
 
 ## Import CA cert in your system or browser
 
-## Import priate key and certificate in your apache server
+## Import private key and certificate in your apache server
