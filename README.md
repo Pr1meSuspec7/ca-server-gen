@@ -27,7 +27,7 @@ Value for Server Cert validity: 700 days
 Are you sure? [y/N] y
 YES
 ```
-Conferm values.
+Confirm values.
 
 ```
 
