@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $1 = "--help" ]]; then
-    echo -e "Usage: ./script -rsa BYTES -caname CA_NAME -cadays CA_VALIDITY -dns SERVER_DOMAIN -days SERVER_VALIDITY\nExample: ./script -rsa 4096 -caname FakeAuthority -cadays 3650 -dns fakedomain.com -days 700"
+    echo -e "Usage: ./ca-server-gen.sh -rsa BYTES -caname CA_NAME -cadays CA_VALIDITY -dns SERVER_DOMAIN -days SERVER_VALIDITY\nExample: ./ca-server-gen.sh -rsa 4096 -caname FakeAuthority -cadays 3650 -dns fakedomain.com -days 700"
     exit 1
 fi
 
