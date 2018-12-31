@@ -9,11 +9,13 @@ This way you can avoid receiving an error for the self-signed certificate.
 ```
 $ ./ca-server-gen.sh -rsa BYTES -caname CA_NAME -cadays CA_VALIDITY -dns SERVER_DOMAIN -days SERVER_VALIDITY
 ```
+<pre>
 -rsa		n of BYTES for RSA  
 -caname		name of your own CA  
 -cadays		validity of CA  
 -dns		server dns (Es. somedomain.com)  
 -days		validity of server certificate  
+</pre>
 
 ## How it works
 
