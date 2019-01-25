@@ -3,6 +3,7 @@
 FILE=$1
 CHECK_FILE=$(file $FILE)
 
+# in base al tipo di file (CHECK_FILE) openssl mostra il contenuto lanciando il comando adatto
 if [[ $CHECK_FILE == *"PEM RSA"* ]]; then
 	openssl rsa -in $FILE -noout -text && cat $FILE
 elif [[ $CHECK_FILE == *"PEM certificate" ]]; then
