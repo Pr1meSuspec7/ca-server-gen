@@ -1,7 +1,7 @@
 
 # How to setup your own CA for dev environment
 
-Questo script genera la tua personale CA e un certificato wildcard firmato per il tuo server.
+This script generates your own CA and a signed wildcard certificate for your server.
 This way you can avoid receiving an error for the self-signed certificate.
 
 # Usage
