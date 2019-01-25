@@ -77,6 +77,7 @@ Getting CA Private Key
 ```
 Signing Certificate for Server.
 
+## To view file use "keycert-show.sh" script
 
 ## Import CA cert in your system or browser
 
