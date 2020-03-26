@@ -52,12 +52,15 @@ case "$response" in
         ;;
 esac
 sleep 1
+mkdir cert
+cd cert
+sleep 1
 echo -e "\n-----"
 openssl genrsa -des3 -out $CANAME-private.key $RSA
 #openssl genrsa -out $CANAME-private.key $RSA
 openssl req -new -x509 -key $CANAME-private.key -out $CANAME-cert.crt -days $CADAYS -subj "/C=IT/ST=Italy/L=Milan/O=$CANAME Ltd/OU=RootCA/CN=$CANAME RootCA"
 echo -e "-----\n\nWriting new private key Authority to '$CANAME-private.key'"
-echo -e "Writing new certificate Authority to '$CANAME-cecrt.crt'"
+echo -e "Writing new certificate Authority to '$CANAME-cert.crt'"
 echo -e "\n-----"
 sleep 2
 openssl genrsa -des3 -out wild-$DNS-private.key $RSA
